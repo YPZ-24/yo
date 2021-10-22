@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Cutive+Mono&family=Gruppo&family=Press+Start+2P&family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cutive Mono', monospace;
+}
+
+body{
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 25px;
+    padding-top: 50px;
+}
+
+/*SCROLL*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, rgba(171,2,227,1) 0%,rgba(2,227,227,1) 100%);
+    border-radius: 10px;
+}
+
+/*TITLE*/
+header > h1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/*SECTIONS*/
+
+main > section{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main > section > h2{
+    padding: 5px 10px;
+    z-index: 101;
+    margin: 0px 20px;
+    font-family: 'Bungee Hairline', cursive;
+}
+
+
+main > section > div{
+    margin-top: -25px;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+}
+
+main > section:nth-child(odd){
+    align-items: flex-start;
+}
+
+main > section:nth-child(even){
+    align-items: flex-end;
+}
+
+main > section:nth-child(odd) > div{
+    margin-right: 50px;
+    box-shadow: 0px 0px 15px hsl(180, 98%, 45%);
+}
+
+main > section:nth-child(odd) > div > ul{
+    margin-left: 20px;
+}
+
+main > section:nth-child(odd) > div > p {
+    text-align: justify;
+}
+
+main > section:nth-child(even) > div{
+    margin-left: 50px;
+    box-shadow: 0px 0px 15px hsl(285, 98%, 45%)
+}
+
+main > section:nth-child(odd) > h2{
+    background: linear-gradient(145deg, rgba(2,151,151,1) 0%, rgba(2,227,227,1)  100%);
+}
+
+main > section:nth-child(even) > h2{
+    background: linear-gradient(145deg, rgba(171,2,227,1) 0%, rgba(114,2,151,1) 100%);
+}
+
+#secbonus{
+    background: linear-gradient(145deg, rgba(153,153,0,1) 0%, rgba(229,230,0,1) 50%, rgba(153,153,0,1) 100%);
+    margin-top: 30px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: border-radius 0.2s;
+}
+
+#secbonus:hover{
+    border-radius: 0px;
+}
+
+#secbonus > a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-family: 'Cutive Mono', monospace;
+    font-size: 2rem;
+}
